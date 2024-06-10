@@ -1,0 +1,37 @@
+.navbarcontainer {
+    background-color: lightgrey;
+    padding: 1rem;
+}
+
+.logo {
+    width: 5rem;
+    margin-left: 2rem;
+}
+
+.menubutton {
+    border: none;
+    background-color: transparent;
+}
+
+.menudropdown {
+    border: none;
+    border-radius: 0%;
+}
+
+.dropdown-item {
+    padding: 1rem 4rem 1rem 2rem;
+}
+
+.input-group {
+    width: 60%;
+    left: 15%;
+}
+
+.navbar-icons {
+    fill: white;
+}
+
+.navbar-icons:hover {
+    fill: black;
+    transition: 0.5s;
+}

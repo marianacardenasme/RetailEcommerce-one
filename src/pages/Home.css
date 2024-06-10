@@ -1,0 +1,70 @@
+.home-container {
+    padding: 0;
+}
+
+.grid-container {
+    padding: 0;
+}
+
+.grid-bigpicture {
+    width: 50vw;
+    height: 100vh;
+    object-fit: fill;
+    position: relative;
+}
+
+.inner-grid-bigpicture {
+    width: 50vw;
+    height: 100vh;
+}
+
+.grid-smallpicture {
+    width: 50vw;
+    height: 50vh;
+    object-fit: fill;
+    position: relative;
+}
+
+.inner-grid-smallpicture {
+    width: 50vw;
+    height: 50vh;
+}
+
+.inner-grid-bigpicture, 
+.inner-grid-smallpicture {
+    position: absolute;
+    background-color: transparent;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-family: "Merriweather", serif;
+    letter-spacing: 2px;
+}
+
+.inner-grid-bigpicture:hover,
+.inner-grid-smallpicture:hover {
+    backdrop-filter: blur(2px);
+    
+}
+
+.inner-grid-bigpicture:hover h2,
+.inner-grid-smallpicture:hover h2 { 
+    font-size: 35px;
+    transition: 0.3s;
+}
+
+.big-inner-text {
+    padding-top: 40%;
+}
+
+.small-inner-text {
+    padding-top: 20%;
+}
+
+.grid-image {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    position: absolute;
+}
+
