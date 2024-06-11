@@ -1,5 +1,5 @@
 .navbarcontainer {
-    background-color: lightgrey;
+    background-color: white;
     padding: 1rem;
 }
 
@@ -28,10 +28,10 @@
 }
 
 .navbar-icons {
-    fill: white;
+    fill: #816132;
 }
 
 .navbar-icons:hover {
-    fill: black;
+    fill: #402F16;
     transition: 0.5s;
 }

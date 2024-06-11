@@ -1,13 +1,17 @@
 import React from 'react'
 import './Home.css'
-import { HomeCarousel } from '../components/HomeCarousel'
 import { Container } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
+import { HomeCarousel } from '../components/HomeCarousel'
+import ProductCard from '../components/ProductCard'
+import Footer from '../components/Footer'
 
 const Home = () => {
   return (
     <Container fluid className='home-container'>
       <HomeCarousel/>
+      <h1 className='title'>Recomendados para ti</h1>
+      <ProductCard />
       <Container fluid className="grid-container d-flex flex-row ">
         <div className='grid-bigpicture'>
           <Link to="/productdetails" className='grid-link-2'>
@@ -34,11 +38,9 @@ const Home = () => {
               </div>
             </Link>
           </div>
-          
         </div>
-
-
       </Container>
+      <Footer />
     </Container>
   )
 }

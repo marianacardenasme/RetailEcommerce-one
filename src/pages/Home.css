@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
 .home-container {
     padding: 0;
 }
@@ -43,7 +46,7 @@
 
 .inner-grid-bigpicture:hover,
 .inner-grid-smallpicture:hover {
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(2.5px);
     
 }
 
@@ -68,3 +71,12 @@
     position: absolute;
 }
 
+.title {
+    color: black;
+    text-align: center;
+    margin: 1em 0 0.2em 0;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}

@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+.footer-container {
+    margin-top: 1em;
+    background-color: #937852;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em 4em 2em 4em;
+    text-align: center;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.footer-title {
+    color: #402F16;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Merriweather", serif;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #F4E0C2;
+    font-size: 13px;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+.socials {
+    margin-top: 3em;
+    justify-content: center;
+    gap: 2em;
+}
+
+.creadopor {
+    margin-top: 3em;
+    font-size: 13px;
+    color: #402F16;
+    font-family: "Merriweather", serif;
+}
