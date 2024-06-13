@@ -12,7 +12,7 @@ const Home = () => {
       <HomeCarousel/>
       <h1 className='title'>Recomendados para ti</h1>
       <ProductCard />
-      <Container fluid className="grid-container d-flex flex-row ">
+      <Container fluid className="grid-container">
         <div className='grid-bigpicture'>
           <Link to="/productdetails" className='grid-link-2'>
             <img className='grid-image' src={require("../images/home/winter_sweaters.png")} alt='winter'/>

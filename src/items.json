@@ -1,25 +1,25 @@
 {
     "products":[
         {
-            "name" : "capri",
-            "price": "$25.000",
+            "name" : "Botas",
+            "price": "$150.000",
             "picture": "https://i.pinimg.com/564x/46/98/d5/4698d505a8d1fa5be52f20d5083136b9.jpg",
             "picture2": "https://i.pinimg.com/564x/bb/d6/12/bbd6129c0f423fd7fc1ac6d252d0e041.jpg"
         },
         {
-            "name" : "capri",
-            "price": "$25.000",
+            "name" : "Orejeras",
+            "price": "$50.000",
             "picture": "https://i.pinimg.com/564x/9f/1b/36/9f1b3640a9b15c550972e6f0f23ba161.jpg",
             "picture2": "https://i.pinimg.com/564x/0e/6e/be/0e6ebed1c9c43e089ef4759dc38a7587.jpg"
         },
         {
-            "name" : "capri",
-            "price": "$25.000",
+            "name" : "Bufandas",
+            "price": "$60.000",
             "picture": "https://i.pinimg.com/564x/53/19/31/531931a2c7a0d494081970982dd0ef95.jpg",
             "picture2": "https://i.pinimg.com/564x/55/e2/8d/55e28d6e06ad38164de7904e23924bc1.jpg"
         },
         {
-            "name" : "capri",
+            "name" : "Medias",
             "price": "$25.000",
             "picture": "https://i.pinimg.com/564x/05/e2/c1/05e2c1d16b9bbdd39ef21bb6249be3e5.jpg",
             "picture2": "https://i.pinimg.com/564x/38/96/4d/38964df4864d52f4f9ada28b76d1438a.jpg"

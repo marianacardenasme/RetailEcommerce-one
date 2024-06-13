@@ -10,5 +10,17 @@
     color: white;
     font-family: "Merriweather", serif;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 1080px) {
+    .caption {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .caption {
+        font-size: 0.9em;
+    }
 }

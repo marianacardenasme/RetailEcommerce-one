@@ -27,11 +27,37 @@
     left: 15%;
 }
 
-.navbar-icons {
+.icon {
     fill: #816132;
+    width: 2em;
 }
 
-.navbar-icons:hover {
+.icon:hover {
     fill: #402F16;
     transition: 0.5s;
+}
+
+@media screen and (max-width: 1000px) {
+    .logo {
+        width: 3em;
+    }
+
+    .icon {
+        background-color: red;
+        width: 1.5em;
+    }
+
+    .searchbar {
+        display: none;
+    }
+
+    .searchbar-btn {
+        margin-left: 4em;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .caption {
+        font-size: 0.9em;
+    }
 }

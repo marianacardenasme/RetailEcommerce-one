@@ -7,6 +7,9 @@
 
 .grid-container {
     padding: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }
 
 .grid-bigpicture {
@@ -31,6 +34,7 @@
 .inner-grid-smallpicture {
     width: 50vw;
     height: 50vh;
+    position: relative;
 }
 
 .inner-grid-bigpicture, 
@@ -39,35 +43,38 @@
     background-color: transparent;
     text-align: center;
     color: white;
-    font-size: 30px;
     font-family: "Merriweather", serif;
     letter-spacing: 2px;
+}
+
+.inner-grid-bigpicture h2, 
+.inner-grid-smallpicture h2 {
+    font-size: 1.7em;
 }
 
 .inner-grid-bigpicture:hover,
 .inner-grid-smallpicture:hover {
     backdrop-filter: blur(2.5px);
-    
 }
 
 .inner-grid-bigpicture:hover h2,
 .inner-grid-smallpicture:hover h2 { 
-    font-size: 35px;
     transition: 0.3s;
+    font-size: 2em;
 }
 
 .big-inner-text {
-    padding-top: 40%;
+    margin-top: 40%;
 }
 
 .small-inner-text {
-    padding-top: 20%;
+    margin-top: 20%;
 }
 
 .grid-image {
     width: 100%;
     height: 100%;
-    object-fit: fill;
+    object-fit: cover;
     position: absolute;
 }
 
@@ -76,7 +83,57 @@
     text-align: center;
     margin: 1em 0 0.2em 0;
     font-family: "M PLUS Rounded 1c", sans-serif;
-    font-size: 25px;
+    font-size: 1.4em;
     font-weight: 600;
     letter-spacing: 1px;
+}
+
+@media screen and (max-width: 1080px) {
+    .grid-container {
+        flex-direction: column;
+    }
+
+    .grid-bigpicture, 
+    .grid-smallpicture, 
+    .inner-grid-bigpicture, 
+    .inner-grid-smallpicture {
+        width: 100vw;
+        height: 40vh;
+    }
+
+    .big-inner-text, .small-inner-text {
+        margin-top: 20vh;
+    }
+
+    .inner-grid-bigpicture h2, 
+    .inner-grid-smallpicture h2 {
+        font-size: 1.8em;
+    }
+
+    .title {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .grid-bigpicture, 
+    .grid-smallpicture, 
+    .inner-grid-bigpicture, 
+    .inner-grid-smallpicture {
+        width: 100vw;
+        height: 30vh;
+    }
+
+    .big-inner-text, .small-inner-text {
+        margin-top: 15vh;
+    }
+    
+    .inner-grid-bigpicture h2,
+    .inner-grid-smallpicture h2 { 
+        font-size: 1.1em;
+    }
+
+    .title {
+        font-size: 0.8em;
+    }
 }
