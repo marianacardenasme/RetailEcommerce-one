@@ -4,7 +4,6 @@ import { Container } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import { HomeCarousel } from '../components/HomeCarousel'
 import ProductCard from '../components/ProductCard'
-import Footer from '../components/Footer'
 
 const Home = () => {
   return (
@@ -40,7 +39,6 @@ const Home = () => {
           </div>
         </div>
       </Container>
-      <Footer />
     </Container>
   )
 }

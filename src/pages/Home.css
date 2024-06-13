@@ -15,7 +15,7 @@
 .grid-bigpicture {
     width: 50vw;
     height: 100vh;
-    object-fit: fill;
+    object-fit: cover;
     position: relative;
 }
 
@@ -27,7 +27,7 @@
 .grid-smallpicture {
     width: 50vw;
     height: 50vh;
-    object-fit: fill;
+    object-fit: cover;
     position: relative;
 }
 

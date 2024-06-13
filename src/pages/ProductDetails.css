@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+.prd-details-container {
+    display: flex;
+    flex: row;
+}
+
+.pictures-container {
+    width: 60vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0px;
+}
+
+.prdpicture {
+    height: 80vh;
+    width: 30vw;
+    object-fit: cover;
+}
+
+.info-container {
+    width: 40vw;
+    margin: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.prdname {
+    font-family: "Merriweather", serif;
+    font-size: 2em;
+    letter-spacing: 3px;
+}
+
+.prdprice {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-size: 1em;
+}
+
+.prdsizes {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    margin-top: 4em;
+}
+
+.sizes-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.size-button {
+    border: solid;
+    border-radius: 20px;
+    border-width: 0.3px;
+    border-color: #9378529d;
+    width: 3em;
+    height: 2em;
+    background-color: transparent;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    color: #9378529d;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+.size-button.active {
+    background-color: #cda2656f; /* Color de fondo cuando está activo */
+    border-color: white;
+    color: white; /* Color del texto cuando está activo */
+}
+
+.addtocart-button {
+    padding: 0.5em;
+    width: 18em;
+    border-radius: 20px;
+    border-width: 1px;
+    border-color: #9378529d;
+    background-color: #9378529d;
+    color: white;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-size: 0.8em;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    margin-top: 3em;
+}
