@@ -55,6 +55,17 @@
     font-size: 0.8em;
 }
 
+.category-title {
+    text-align: center;
+    font-family: "Merriweather", serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    margin: 1em;
+    color: #816132;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
 @media screen and (max-width: 1080px) {
     .prdcard-container {
         display: grid;

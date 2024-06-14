@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
 .navbarcontainer {
     background-color: white;
     padding: 1rem;
@@ -16,10 +19,36 @@
 .menudropdown {
     border: none;
     border-radius: 0%;
+    padding: 1em;
+}
+
+.dropdown-header {
+    font-family: "Merriweather", serif;
+    font-size: 0.8em;
+    color: black;
+    font-weight: 600;
+    letter-spacing: 1.5px;
 }
 
 .dropdown-item {
-    padding: 1rem 4rem 1rem 2rem;
+    padding: 0.5rem 2rem 0.5rem 1rem;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-size: 0.9em;
+    font-weight: 400;
+}
+
+.special-prices {
+    font-weight: 600;
+    color: red;
+}
+
+.dropdown-item:hover {
+    font-weight: 600;
+}
+
+.special-prices:hover {
+    font-weight: 700;
+    color: red;
 }
 
 .input-group {

@@ -1,10 +1,16 @@
-import React from 'react';
+import React from 'react'
 import './NavBar.css'
 import { Container } from 'react-bootstrap'
-import { Link } from 'react-router-dom';
 import {BsSearch} from 'react-icons/bs'
+import { Link } from 'react-router-dom'
+import items from '../items.json'
+
+
 
 const NavBar = () => {
+  const uniqueCategories = [...new Set(items.products.map(product => product.category))]
+  const uniqueCollections = [...new Set(items.products.map(product => product.collection))]
+
   return (
     <Container fluid className='navbarcontainer'>
       <Container className="d-flex">
@@ -14,14 +20,22 @@ const NavBar = () => {
               <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
             </svg>
           </button>
-          <ul className="dropdown-menu menudropdown p-3 margin-top-4">
-            <li><h6 class="dropdown-header">Productos permanentes</h6></li>
-            <li><a className="dropdown-item" href="/home">Action</a></li>
+          <ul className="dropdown-menu menudropdown">
+            <li><h6 class="dropdown-header">Categorías</h6></li>
+            <div className='category-div'>
+              {uniqueCategories.map(category => (
+                <li key={category}><Link className="dropdown-item" to={`/category/${category}`}>{category}</Link></li>
+              ))}
+            </div>
             <li><hr className="dropdown-divider"/></li>
-            <li><a className="dropdown-item" href="/home">Another action</a></li>
+            <li><h6 class="dropdown-header">Colecciones</h6></li>
+            <div className='category-div'>
+              {uniqueCollections.map(collection => (
+                <li key={collection}><Link className="dropdown-item" to={`/collection/${collection}`}>{collection}</Link></li>
+              ))}
+            </div>
             <li><hr className="dropdown-divider"/></li>
-            <li><h6 class="dropdown-header">Productos de temporada</h6></li>
-            <li><a className="dropdown-item" href="/home">Something else here</a></li>
+            <li><Link className="dropdown-item special-prices" href="/home">Precios especiales</Link></li>
           </ul>
         </div>
         <div className="col-2">

@@ -3,40 +3,122 @@
         {
             "name" : "Botas",
             "price": "$150.000",
+            "special-price": "120.000",
             "pictures": [
                 "https://i.pinimg.com/564x/46/98/d5/4698d505a8d1fa5be52f20d5083136b9.jpg",
                 "https://i.pinimg.com/564x/bb/d6/12/bbd6129c0f423fd7fc1ac6d252d0e041.jpg"
             ],
-            "sizes": ["xs", "s", "m", "l", "xl"]
+            "sizes": ["xs", "s", "m", "l", "xl"],
+            "category": "zapatos", 
+            "collection": "esenciales",
+            "discount": true,
+            "recommended": true
         },
         {
             "name" : "Orejeras",
             "price": "$50.000",
+            "special-price": "",
             "pictures": [
                 "https://i.pinimg.com/564x/9f/1b/36/9f1b3640a9b15c550972e6f0f23ba161.jpg",
                 "https://i.pinimg.com/564x/0e/6e/be/0e6ebed1c9c43e089ef4759dc38a7587.jpg",
                 "https://i.pinimg.com/564x/6a/61/e7/6a61e79e1dcc2ba0d2f18d26a3611749.jpg",
                 "https://i.pinimg.com/736x/f2/82/da/f282dae978025479221e7bbb5c539ac2.jpg"
             ],
-            "sizes": ["xs", "s", "m", "l", "xl"]
+            "sizes": ["xs", "s", "m", "l", "xl"],
+            "category": "accesorios", 
+            "collection": "en tendencia",
+            "discount": false,
+            "recommended": true
         },
         {
             "name" : "Bufandas",
             "price": "$60.000",
+            "special-price": "",
             "pictures": [
                 "https://i.pinimg.com/564x/53/19/31/531931a2c7a0d494081970982dd0ef95.jpg",
                 "https://i.pinimg.com/564x/55/e2/8d/55e28d6e06ad38164de7904e23924bc1.jpg"
             ],
-            "sizes": ["xs", "s", "m", "l", "xl"]
+            "sizes": ["xs", "s", "m", "l", "xl"],
+            "category": "accesorios", 
+            "collection": "tejidos",
+            "discount": false,
+            "recommended": true
         },
         {
             "name" : "Medias",
             "price": "$25.000",
+            "special-price": "",
             "pictures": [
                 "https://i.pinimg.com/564x/05/e2/c1/05e2c1d16b9bbdd39ef21bb6249be3e5.jpg",
                 "https://i.pinimg.com/564x/38/96/4d/38964df4864d52f4f9ada28b76d1438a.jpg"
             ],
-            "sizes": ["xs", "s", "m", "l", "xl"]
+            "sizes": ["xs", "s", "m", "l", "xl"],
+            "category": "ropa", 
+            "collection": "esenciales", 
+            "discount": false,
+            "recommended": true
+        },
+        {
+            "name" : "Chaqueta",
+            "price": "$180.000",
+            "special-price": "",
+            "pictures": [
+                "https://i.pinimg.com/736x/26/f7/e7/26f7e756c83a1a1f7b1c3d28ca059044.jpg",
+                "https://i.pinimg.com/564x/5f/b6/50/5fb65055f8c33aa4ec308404267647ae.jpg",
+                "https://i.pinimg.com/564x/f8/94/b3/f894b3ee9353ac8aa3c464950ce53617.jpg",
+                "https://i.pinimg.com/564x/50/8a/75/508a75b92e4ca409bdaaec5041b67842.jpg"
+            ],
+            "sizes": ["xs", "s", "m", "l", "xl"],
+            "category": "ropa", 
+            "collection": "esenciales",
+            "discount": false,
+            "recommended": false
+        },
+        {
+            "name" : "Guantes",
+            "price": "$35.000",
+            "special-price": "",
+            "pictures": [
+                "https://i.pinimg.com/564x/d0/a2/76/d0a2762f49db09cf8f76ae84bf25fbed.jpg",
+                "https://i.pinimg.com/736x/49/05/84/490584b7c9b0517e0b496122546e0590.jpg"
+            ],
+            "sizes": ["xs", "s", "m", "l", "xl"],
+            "category": "accesorios", 
+            "collection": "tejidos", 
+            "discount": false,
+            "recommended": false
+        },
+        {
+            "name" : "Sweater",
+            "price": "$90.000",
+            "special-price": "",
+            "pictures": [
+                "https://i.pinimg.com/564x/6e/af/db/6eafdb2b38216fcfba3b24d3857fb302.jpg",
+                "https://i.pinimg.com/564x/d4/30/69/d430693b7b789346380911214ac9b8bd.jpg",
+                "https://i.pinimg.com/564x/8a/7c/24/8a7c24f70a9490d9952b0c956fd97179.jpg",
+                "https://i.pinimg.com/564x/f1/94/7f/f1947fb157894669076107b6efa190fe.jpg"
+            ],
+            "sizes": ["xs", "s", "m", "l", "xl"],
+            "category": "ropa", 
+            "collection": "esenciales", 
+            "discount": false,
+            "recommended": false
+        },
+        {
+            "name" : "Gorro",
+            "price": "$55.000",
+            "special-price": "",
+            "pictures": [
+                "https://i.pinimg.com/564x/16/06/85/1606853ad24c5b99d5783e80a5c319e9.jpg",
+                "https://i.pinimg.com/736x/b8/30/03/b8300355741987d702265656b7686b78.jpg",
+                "https://i.pinimg.com/564x/c5/fe/78/c5fe78d486e0bcff410f81488edb0178.jpg",
+                "https://i.pinimg.com/564x/10/ca/c4/10cac4eade99e915f799ddb2050f529b.jpg"
+            ],
+            "sizes": ["xs", "s", "m", "l", "xl"],
+            "category": "accesorios", 
+            "collection": "en tendencia", 
+            "discount": false,
+            "recommended": false
         }
     ]
 }

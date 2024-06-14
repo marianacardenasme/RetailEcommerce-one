@@ -7,6 +7,8 @@ import NavBar from './components/NavBar';
 import Home from "./pages/Home";
 import Footer from "./components/Footer"
 import ProductDetails from './pages/ProductDetails';
+import Category from "./pages/Category";
+import Collection from "./pages/Collection";
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/:name" element={<ProductDetails />}></Route>
+        <Route path="/category/:categoryName" element={<Category />}></Route>
+        <Route path="/collection/:collectionName" element={<Collection />}></Route>
         <Route path="*" element={<Error />}></Route>
       </Routes>
       <Footer />

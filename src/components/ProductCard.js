@@ -7,9 +7,11 @@ import items from '../items.json'
 
 const ProductCard = () => {
   const [product] = useState(items)
+  const recommendedProducts = product.products.filter(({ recommended }) => recommended).slice(0, 4)
+
   return (
     <Container fluid className='prdcard-container'>
-      {product.products.map(({ name, price, pictures, picture2 }) => (
+      {recommendedProducts.map(({ name, price, pictures}) => (
         <Link className="prdcard" key={name} to={`/${name}`}>
           <div className='picture-container'>
             <div className='picture-one'>

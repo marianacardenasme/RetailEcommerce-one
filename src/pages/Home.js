@@ -13,27 +13,27 @@ const Home = () => {
       <ProductCard />
       <Container fluid className="grid-container">
         <div className='grid-bigpicture'>
-          <Link to="/productdetails" className='grid-link-2'>
-            <img className='grid-image' src={require("../images/home/winter_sweaters.png")} alt='winter'/>
+          <Link to="/collection/esenciales" className='grid-link-2'>
+            <img className='grid-image' src={require("../images/home/winter_sweaters.png")} alt='esenciales'/>
             <div className='inner-grid-bigpicture'>
-              <h2 className='big-inner-text'>Sweaters</h2>
+              <h2 className='big-inner-text'>Esenciales</h2>
             </div>
           </Link>
         </div>
         <div>
           <div className='grid-smallpicture d-flex flex-col'>
-            <Link to="/productdetails" className='grid-link-2'>
-              <img className='grid-image' src={require("../images/home/gorros.jpg")} alt='winter'/>
+            <Link to="/collection/en%20tendencia" className='grid-link-2'>
+              <img className='grid-image' src={require("../images/home/gorros.jpg")} alt='en tendencia'/>
               <div className='inner-grid-smallpicture'>
-                <h2 className='small-inner-text'>Gorros</h2>
+                <h2 className='small-inner-text'>En tendencia</h2>
               </div>
             </Link>
           </div>
           <div className='grid-smallpicture d-flex flex-col'>
-            <Link to="/productdetails" className='grid-link-2'>
-              <img className='grid-image' src={require("../images/home/guantes.jpg")} alt='winter'/>
+            <Link to="/collection/tejidos" className='grid-link-2'>
+              <img className='grid-image' src={require("../images/home/guantes.jpg")} alt='tejidos'/>
               <div className='inner-grid-smallpicture'>
-                <h2 className='small-inner-text'>Guantes</h2>
+                <h2 className='small-inner-text'>Tejidos</h2>
               </div>
             </Link>
           </div>

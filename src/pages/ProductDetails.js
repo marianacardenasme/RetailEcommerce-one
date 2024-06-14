@@ -14,7 +14,6 @@ const ProductDetails = () => {
       setProductDetails(newProduct)
       console.log(newProduct)
     }
-
     findProduct()
   }, [name])
 
