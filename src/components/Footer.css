@@ -24,6 +24,11 @@
     font-family: "Merriweather", serif;
 }
 
+.category-div {
+    display: flex;
+    flex-direction: column;
+}
+
 .footer-link {
     text-decoration: none;
     color: #F4E0C2;
@@ -42,4 +47,18 @@
     font-size: 13px;
     color: #402F16;
     font-family: "Merriweather", serif;
+}
+
+@media screen and (max-width: 1000px) {
+    .footer-title {
+        font-size: 10px;
+    }
+
+    .footer-link {
+        font-size: 9px;
+    }
+
+    .creadopor {
+        font-size: 8px;
+    }
 }

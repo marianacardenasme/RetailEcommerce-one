@@ -13,7 +13,7 @@
     grid-gap: 0px;
 }
 
-.prdpicture {
+.pdetails-picture {
     height: 80vh;
     width: 30vw;
     object-fit: cover;
@@ -26,18 +26,18 @@
     flex-direction: column;
 }
 
-.prdname {
+.pdetails-name {
     font-family: "Merriweather", serif;
     font-size: 2em;
     letter-spacing: 3px;
 }
 
-.prdprice {
+.pdetails-price {
     font-family: "M PLUS Rounded 1c", sans-serif;
     font-size: 1em;
 }
 
-.prdsizes {
+.pdetails-sizes {
     font-family: "Merriweather", serif;
     font-weight: 300;
     font-size: 0.8em;

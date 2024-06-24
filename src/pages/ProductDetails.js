@@ -25,13 +25,13 @@ const ProductDetails = () => {
     <div className='prd-details-container'>
       <div className='pictures-container'>
         {ProductDetails.pictures && ProductDetails.pictures.map((picture) => (
-          <img src={picture} alt={ProductDetails.name} className='prdpicture'/>
+          <img src={picture} alt={ProductDetails.name} className='pdetails-picture'/>
         ))}
       </div>
       <div className='info-container'>
-        <h1 className='prdname'>{name}</h1>
-        <h3 className='prdprice'>{ProductDetails.price}</h3>
-        <p className='prdsizes'>Tallas disponibles</p>
+        <h1 className='pdetails-name'>{name}</h1>
+        <h3 className='pdetails-price'>{ProductDetails.price}</h3>
+        <p className='pdetails-sizes'>Tallas disponibles</p>
         <div className='sizes-container'>
           {ProductDetails.sizes && ProductDetails.sizes.map((size) => (
             <button key={size}

@@ -11,6 +11,11 @@
     margin-left: 2rem;
 }
 
+
+.searchbar-btn {
+    background-color: transparent;
+}
+
 .menubutton {
     border: none;
     background-color: transparent;
@@ -52,8 +57,8 @@
 }
 
 .input-group {
-    width: 60%;
-    left: 15%;
+    width: 90%;
+    left: 2em;
 }
 
 .icon {
@@ -66,27 +71,36 @@
     transition: 0.5s;
 }
 
-@media screen and (max-width: 1000px) {
+.iconspace {
+    margin-left: 1em;
+}
+
+.searchbtn-toggle {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
     .logo {
         width: 3em;
     }
 
     .icon {
-        background-color: red;
-        width: 1.5em;
+        width: 1em;
     }
 
-    .searchbar {
+    .searchbar-display {
         display: none;
     }
 
-    .searchbar-btn {
-        margin-left: 4em;
+    .searchbtn-toggle {
+        display: block;
     }
-}
 
-@media screen and (max-width: 430px) {
-    .caption {
-        font-size: 0.9em;
+    .input-group {
+        width: 70%;
+        left: 15%;
+        right: 15%;
+        margin-top: 1em;
     }
+
 }

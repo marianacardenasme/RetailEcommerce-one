@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import 'bootstrap/dist/js/bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Helmet} from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import Error from "./pages/Error";
 import NavBar from './components/NavBar';
 import Home from "./pages/Home";
@@ -13,12 +13,15 @@ import Collection from "./pages/Collection";
 function App() {
   return (
     <BrowserRouter>
-      <Helmet>
+      <HelmetProvider>
+        <Helmet>
           <meta charSet="utf-8" />
           <title>ECOMMERCE</title>
           <link rel="canonical" href="http://mysite.com/example" />
           <meta name="description" content="ECOMMERCE" />
-      </Helmet>
+        </Helmet>
+      </HelmetProvider>
+      
       <NavBar/>
       <Routes>
         <Route path="/" element={<Home/>}/>
