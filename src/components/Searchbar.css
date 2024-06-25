@@ -1,0 +1,23 @@
+.searchbar-container {
+  border: solid;
+  border-radius: 10px;
+  border-width: 1px;
+  padding: 0.4em;
+  align-items: center;
+}
+
+.search-input,
+.search-button {
+  background-color: transparent;
+  border: none;
+}
+
+.search-input:focus {
+  outline: none;
+  background-color: transparent;
+}
+
+.search-icon {
+  height: 16px;
+  margin-bottom: 3px;
+}

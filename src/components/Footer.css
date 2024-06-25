@@ -34,6 +34,7 @@
     color: #F4E0C2;
     font-size: 13px;
     font-family: "M PLUS Rounded 1c", sans-serif;
+    text-transform: capitalize;
 }
 
 .socials {

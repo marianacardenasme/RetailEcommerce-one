@@ -5,6 +5,7 @@ import {BsSearch} from 'react-icons/bs'
 import { Link } from 'react-router-dom'
 import items from '../items.json'
 import { useState } from 'react'
+import Searchbar from './Searchbar'
 
 const NavBar = () => {
   const uniqueCategories = [...new Set(items.products.map(product => product.category))]
@@ -44,18 +45,7 @@ const NavBar = () => {
           </Link>
         </div>
         <div>
-          <div className="searchbar-display input-group">
-            <input 
-              type="text" 
-              className="form-control py-1 searchbar" 
-              placeholder="Buscar producto" 
-              aria-label="Buscar producto" 
-              aria-describedby="basic-addon2"
-            />
-            <span className="input-group-text py-1 searchbar-btn" id="basic-addon2">
-              <BsSearch className='fs-10'/>
-            </span>
-          </div>
+          <Searchbar />
         </div>
         <div className='d-flex flex-row'>
           <div className='searchbtn-toggle'>

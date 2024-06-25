@@ -11,11 +11,6 @@
     margin-left: 2rem;
 }
 
-
-.searchbar-btn {
-    background-color: transparent;
-}
-
 .menubutton {
     border: none;
     background-color: transparent;
@@ -40,6 +35,7 @@
     font-family: "M PLUS Rounded 1c", sans-serif;
     font-size: 0.9em;
     font-weight: 400;
+    text-transform: capitalize;
 }
 
 .special-prices {
@@ -94,13 +90,6 @@
 
     .searchbtn-toggle {
         display: block;
-    }
-
-    .input-group {
-        width: 70%;
-        left: 15%;
-        right: 15%;
-        margin-top: 1em;
     }
 
 }

@@ -9,6 +9,7 @@ import Footer from "./components/Footer"
 import ProductDetails from './pages/ProductDetails';
 import Category from "./pages/Category";
 import Collection from "./pages/Collection";
+import Results from "./pages/Results";
 
 function App() {
   return (
@@ -25,9 +26,11 @@ function App() {
       <NavBar/>
       <Routes>
         <Route path="/" element={<Home/>}/>
+        <Route path="/q" element={<Home />} />
         <Route path="/:name" element={<ProductDetails />}></Route>
         <Route path="/category/:categoryName" element={<Category />}></Route>
         <Route path="/collection/:collectionName" element={<Collection />}></Route>
+        <Route path="/q/:inputvalue" element={<Results />} />
         <Route path="*" element={<Error />}></Route>
       </Routes>
       <Footer />

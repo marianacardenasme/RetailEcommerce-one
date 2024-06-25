@@ -1,0 +1,21 @@
+.results-container {
+  padding: 2em 4em 2em 4em;
+}
+
+.result-items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 2em 3em 2em 3em;
+}
+
+.result-item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-decoration: none;
+  justify-self: center;
+}
+
+.result-image {
+  width: 10em;
+}

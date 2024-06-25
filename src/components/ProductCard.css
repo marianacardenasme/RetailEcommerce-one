@@ -55,16 +55,26 @@
     font-size: 0.8em;
 }
 
-.category-title {
+.category-title,
+.search-result-title {
     text-align: center;
     font-family: "Merriweather", serif;
-    font-size: 1.5em;
-    font-weight: 400;
     margin: 1em;
     color: #816132;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+
+.category-title {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.search-result-title {
+    font-size: 1em;
+    font-weight: 300;
+}
+
 
 @media screen and (max-width: 1080px) {
     .prdcard-container {
