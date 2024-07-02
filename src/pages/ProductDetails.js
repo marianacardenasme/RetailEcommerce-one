@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import items from '../items.json'
 import { useParams } from 'react-router-dom'
 import './ProductDetails.css'
+import ReactImageMagnify from 'react-image-magnify';
 
 const ProductDetails = () => {
   let [ProductDetails, setProductDetails] = useState([])
@@ -25,7 +26,20 @@ const ProductDetails = () => {
     <div className='prd-details-container'>
       <div className='pictures-container'>
         {ProductDetails.pictures && ProductDetails.pictures.map((picture) => (
-          <img src={picture} alt={ProductDetails.name} className='pdetails-picture'/>
+          <ReactImageMagnify className='pdetails-picture' {...{
+            smallImage: {
+                alt: 'Wristwatch by Ted Baker London',
+                isFluidWidth: true,
+                src: picture
+            },
+            largeImage: {
+                src: picture,
+                width: 1200,
+                height: 1800,
+                enlargedImagePosition: 'over'
+            }
+          }} />
+          
         ))}
       </div>
       <div className='info-container'>
