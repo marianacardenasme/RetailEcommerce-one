@@ -69,11 +69,14 @@
 
 .iconspace {
     margin-left: 1em;
+    background-color: transparent;
+    border: none;
 }
 
 .searchbtn-toggle {
     display: none;
 }
+
 
 @media screen and (max-width: 800px) {
     .logo {

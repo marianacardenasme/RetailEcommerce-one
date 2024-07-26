@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+.user-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.user-details-container,
+.user-orders-container {
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.user-details-container {
+  width: 40%;
+}
+
+.user-orders-container {
+  width: 60%;
+}
+
+.user-details-title {
+  color: #402F16;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Merriweather", serif;
+  letter-spacing: 1.3px;
+}
+
+.user-details-name {
+  color: #937852;
+  font-size: 20px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  margin-bottom: 4em;
+}
+
+.user-details-information {
+  color: #937852;
+  font-size: 14px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+.logout-button {
+  background-color: transparent;
+  border: solid;
+  border-radius: 25px;
+  padding: 0.3em 1em 0.3em 1em;
+  border-width: 1.5px;
+  border-color: #402F16;
+  margin-top: 5em;
+  color: #402F16;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 16px;
+}
+

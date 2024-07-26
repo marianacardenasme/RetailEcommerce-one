@@ -1,7 +1,13 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { auth } from "./Firebase";
 import 'bootstrap/dist/js/bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import Register from "./components/Register";
+import Login from "./components/Login";
+import Reset from "./components/Reset";
+import Profile from "./components/Profile";
 import Error from "./pages/Error";
 import NavBar from './components/NavBar';
 import Home from "./pages/Home";
@@ -12,6 +18,13 @@ import Collection from "./pages/Collection";
 import Results from "./pages/Results";
 
 function App() {
+  const [user, setUser] = useState();
+  useEffect(() => {
+    auth.onAuthStateChanged((user) => {
+      setUser(user);
+    });
+  });
+
   return (
     <BrowserRouter>
       <HelmetProvider>
@@ -25,13 +38,17 @@ function App() {
       
       <NavBar/>
       <Routes>
-        <Route path="/" element={<Home/>}/>
+        <Route path="/" element={<Home />} />
         <Route path="/q" element={<Home />} />
         <Route path="/:name" element={<ProductDetails />}></Route>
         <Route path="/category/:categoryName" element={<Category />}></Route>
         <Route path="/collection/:collectionName" element={<Collection />}></Route>
         <Route path="/q/:inputvalue" element={<Results />} />
         <Route path="*" element={<Error />}></Route>
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/reset" element={<Reset />} />
+        <Route path="/profile" element={user ? <Profile /> : <Home/>} />
       </Routes>
       <Footer />
     </BrowserRouter>
