@@ -1,7 +1,6 @@
 import React from 'react'
 import './NavBar.css'
 import { Container } from 'react-bootstrap'
-import {BsSearch} from 'react-icons/bs'
 import { Link } from 'react-router-dom'
 import items from '../items.json'
 import { useState, useEffect } from 'react'
@@ -12,7 +11,6 @@ import { useNavigate } from "react-router-dom";
 const NavBar = () => {
   const uniqueCategories = [...new Set(items.products.map(product => product.category))]
   const uniqueCollections = [...new Set(items.products.map(product => product.collection))]
-  const [toggle, setToggle] = useState(false);
   
   const [user, setUser] = useState();
   useEffect(() => {
@@ -29,8 +27,8 @@ const NavBar = () => {
 
   return (
     <Container fluid className='navbarcontainer'>
-      <Container className="d-flex justify-content-between">
-        <div className='d-flex flex-row'>
+      <Container className="component-container">
+        <div className='d-flex flex-row component1'>
           <div className='navbar-icons dropdown'>
             <button className="menubutton" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               <svg  xmlns="http://www.w3.org/2000/svg" className="bi bi-list icon" viewBox="0 0 16 16">
@@ -59,15 +57,10 @@ const NavBar = () => {
             <img className='logo' src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Zara_Logo.svg/2560px-Zara_Logo.svg.png' alt='LOGO'/>
           </Link>
         </div>
-        <div>
+        <div className='component2'>
           <Searchbar />
         </div>
-        <div className='d-flex flex-row'>
-          <div className='searchbtn-toggle'>
-            <svg xmlns="http://www.w3.org/2000/svg" className="bi bi-search icon" viewBox="0 0 16 16" onClick={() => setToggle(!toggle)}>
-              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-            </svg>
-          </div>
+        <div className='d-flex flex-row component3'>
           <button onClick={checkProfile} className='iconspace'>
             <svg xmlns="http://www.w3.org/2000/svg"  className="bi bi-person icon" viewBox="0 0 16 16">
               <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
@@ -85,22 +78,6 @@ const NavBar = () => {
           </button>
         </div>
       </Container>
-      {toggle && (
-        <Container>
-          <div className="input-group">
-            <input 
-              type="text" 
-              className="form-control py-1 searchbar" 
-              placeholder="Buscar producto" 
-              aria-label="Buscar producto" 
-              aria-describedby="basic-addon2"
-            />
-            <span className="input-group-text py-1 searchbar-btn" id="basic-addon2">
-              <BsSearch className='fs-10'/>
-            </span>
-          </div>
-        </Container>
-      )}
     </Container>
 
   )

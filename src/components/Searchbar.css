@@ -2,14 +2,21 @@
   border: solid;
   border-radius: 10px;
   border-width: 1px;
+  border-color: #816132;
   padding: 0.4em;
   align-items: center;
 }
 
-.search-input,
-.search-button {
-  background-color: transparent;
+.input-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-input {
+  width: 90%;
   border: none;
+  font-size: 16px;
+  color: #816132;
 }
 
 .search-input:focus {
@@ -17,7 +24,27 @@
   background-color: transparent;
 }
 
+.search-button {
+  background-color: transparent;
+  border: none;
+}
+
 .search-icon {
   height: 16px;
   margin-bottom: 3px;
+  fill: #816132;
+}
+
+@media screen and (max-width: 800px) {
+  .searchbar-container {
+    padding: 0.2em;
+  }
+
+  .search-input {
+    font-size: 12px;
+  }
+
+  .search-icon {
+    height: 12px;
+  }
 }
